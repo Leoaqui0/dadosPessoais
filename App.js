@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Title from './src/componentes/title';
+import Form from './src/componentes/forms';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Title/>
+      <Form/>
+      <Text style={styles.rodape}>©Leonardo Silva</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +17,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#7B68EE',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow:"hidden",
+  },
+  rodape:{
+    fontSize:12,
+    color: "#000",
+    fontWeight: "bold",
     alignItems: 'center',
     justifyContent: 'center',
   },
+
 });
